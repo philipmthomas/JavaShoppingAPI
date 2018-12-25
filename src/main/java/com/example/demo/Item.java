@@ -3,11 +3,10 @@ package com.example.demo;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.relational.core.mapping.Column;
-import org.springframework.hateoas.ResourceSupport;
 
 import java.time.LocalDateTime;
 
-public class Item extends ResourceSupport {
+public class Item {
     @Id
     private Long id;
     private String name;

@@ -13,7 +13,8 @@ public class DemoApplication {
 	}
 
 	@Bean
-	ApplicationRunner applicationRunner(ItemRepository itemRepository) {
+	ApplicationRunner applicationRunner(ItemController itemController,
+										ItemRepository itemRepository) {
 		return args ->
 		{
 			/*Item item = Item.create("Pickles");

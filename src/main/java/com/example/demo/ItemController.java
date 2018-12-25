@@ -17,4 +17,9 @@ public class ItemController {
 
     }
 
+    @RequestMapping(value = "/customers", method = RequestMethod.GET)
+    public Iterable<Item> getCustomers() {
+        return itemRepository.findAll();
+    }
+
 }
